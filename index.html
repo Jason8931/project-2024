@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Установка заголовка страницы -->
+    <title>Превью</title> <!-- Подключение файла со стилями -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body> <!-- Заголовок-ссылка для перехода в социальную сеть -->
+    <h1><a href="hah.html">Советую вам оценить получившуюся Соц Сеть на деле!</a></h1>
+    <!-- Создание общего контейнера слайд-шоу -->
+    <div class="slideshow-container"> <!-- Контейнеры для отображения картинок и текста -->
+        <div class="mySlides fade"> <img src="a.png" style="width:50%">
+            <div class="text">Добро пожаловать в новую социальную сеть!</div>
+        </div>
+        <div class="mySlides fade"> <img src="b.png" style="width:50%">
+            <div class="text">Мы создали "Перемещение" по сайту через меню в правом верхнем углу</div>
+        </div>
+        <div class="mySlides fade"> <img src="с.png" style="width:50%">
+            <div class="text">В каждой Соц сети можно зарегистрироваться, У нас тоже!</div>
+        </div>
+        <div class="mySlides fade"> <img src="d.png" style="width:50%">
+            <div class="text">Интересный профиль</div>
+        </div>
+        <div class="mySlides fade"> <img src="i.png" style="width:50%">
+            <div class="text">Чатик с другими пользователями <3 </div>
+            </div>
+            <div class="mySlides fade"> <img src="f.png" style="width:50%">
+                <div class="text">Загрузка музыки</div>
+            </div>
+            <div class="mySlides fade"> <img src="п.png" style="width:50%">
+                <div class="text">Загрузка видео</div>
+            </div>
+            <div class="mySlides fade"> <img src="р.png" style="width:50%">
+                <div class="text">Есть окно с Новостями или же Постами, называйте как душе угодно</div>
+            </div>
+            <div class="mySlides fade"> <img src="й.png" style="width:50%">
+                <div class="text">Меню поста</div>
+            </div>
+            <div class="mySlides fade"> <img src="ц.png" style="width:50%">
+                <div class="text">Меню создания поста</div>
+            </div>
+            <div class="mySlides fade"> <img src="и.png" style="width:50%">
+                <div class="text">Как же без интересных игр, они тут тоже присутствуют</div>
+            </div>
+            <div class="mySlides fade"> <img src="кн.png" style="width:50%">
+                <div class="text">Крестики нолики представлены в 3-х режимах</div>
+            </div>
+            <div class="mySlides fade"> <img src="з.png" style="width:50%">
+                <div class="text">Змейка в 8-bit стиле</div>
+            </div>
+            <div class="mySlides fade"> <img src="б.png".png" style="width:50%">
+                <div class="text">Вот эта игра с шариком, кубиками и рактекой. (До сих пор не запомню как она называется)</div>
+            </div>
+            <div class="mySlides fade"> <img src="впосты.png".png" style="width:50%">
+                <div class="text">Меню управления постами на вашей страничке</div>
+            </div>
+            <div class="mySlides fade"> <img src="вк.png".png" style="width:50%">
+                <div class="text">Меню управления коментариями на ваших постах</div>
+            </div>
+            <div class="mySlides fade"> <img src="troll-3.jpg".png" style="width:50%">
+                <div class="text">Подробно ознакомиться с данной соц сетью вы можете нажав на кнопку выше!</div>
+            </div>
+
+            <!-- Кнопки для перехода между слайдами --> <a class="prev"
+                onclick="plusSlides(-1); showSlides()">&#10094;</a> <a class="next"
+                onclick="plusSlides(1); showSlides()">&#10095;</a>
+        </div> <!-- Алгоритм демонстрации слайдов -->
+        <script> var slideIndex = 0; var slideTimer;
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (slideIndex >= slides.length) { slideIndex = 0 }
+                if (slideIndex < 0) { slideIndex = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                } slides[slideIndex].style.display = "block";
+                slideTimer = setTimeout(function () {
+                    plusSlides(1);
+                    showSlides();
+                }, 10000);
+            }
+            showSlides();
+            function plusSlides(n) {
+                clearTimeout(slideTimer);
+                slideIndex += n;
+            } </script>
+</body>
+
+</html>

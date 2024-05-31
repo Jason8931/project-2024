@@ -1,0 +1,54 @@
+body {
+    background-color: #61708b;
+    /* Цвет фона страницы */
+    font-family: 'Open Sans', sans-serif;
+    /* Шрифт текста */
+    margin: 0;
+    /* Убираем отступы по умолчанию */
+    overflow: hidden;
+    /* Убираем прокрутку, чтобы картинки занимали весь экран */
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 840px;
+    height: 475px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+video:hover{
+    transform: translate(-50%, -70%);
+}
+
+a{
+    color: rgb(183, 255, 0);
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: rgb(0, 255, 17);
+    font-size: 35px;
+}
+
+p{
+    font-size: 32px;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.s{
+    font-size: 17px;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
